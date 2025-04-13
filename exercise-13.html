@@ -235,6 +235,26 @@
 		}
 
 		/* Air */
+		[id ^= 'star-'] {
+			animation: 4s ease-in-out infinite alternate pulse;
+			transform-origin: center;
+		}
+
+		#star-02 {animation-delay: .5s;}
+		#star-03 {animation-delay: 1s;}
+
+
+		@keyframes pulse {
+			0%, 100% {
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			50% {
+				transform: scale(0);
+				opacity: 0;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -279,6 +299,9 @@
 			</div>
 
 			<!-- Air -->
+			 <div style="font-size: 60px; color:var(--color-accent)" id="star-01">*</div>
+			 <div style="font-size: 60px; color:var(--color-accent)" id="star-02">*</div>
+			 <div style="font-size: 60px; color:var(--color-accent)" id="star-03">*</div>
 			<!-- End Air -->
 		</section>
 	</div>
